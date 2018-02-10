@@ -1,0 +1,142 @@
+body{
+background-color : black;
+background-attachment:fixed;
+overflow:scroll;
+background-repeat:no-repeat;
+border:0;
+}
+
+@keyframes changeopa{
+	from{ opacity: 0;}
+	to { opacity: 1;}
+}
+@keyframes lum{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+
+h1{
+animation-name: changeopa;
+animation-delay: 0s;
+animation-duration: 1s;
+animation-iteration-count: 1;
+display:flex;
+letter-spacing:30px;
+text-transform:uppercase;
+font-size:50px;
+font-weight:bold;
+color : red;
+padding-left: 5em;
+margin: 0;
+animation-fill-mode:forwards;
+font-family: '8BITWONDERNominal';
+font-weight: normal;
+font-style: normal;
+}
+
+.annonce{
+color: white;
+padding-left: 110px;
+padding-top: 40px;
+font-size:30px;
+color: white;
+margin-left: 55px;
+margin-top: 10px; 
+animation-fill-mode:forwards;
+font-family: '8BITWONDERNominal';
+font-weight: normal;
+font-style: normal;
+}
+.astuce{
+color: white;
+padding-left: 140px;
+padding-top: 10px;
+font-size:20px;
+color: white;
+margin-left: 85px;
+margin-top: 10px; 
+animation-fill-mode:forwards;
+font-family: '8BITWONDERNominal';
+font-weight: normal;
+font-style: normal;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////*/
+#menu-accordeon {
+  padding:0;
+  margin-top:0em;
+  list-style:none;
+  text-align: center;
+  position:fixed;
+  width: 180px;
+}
+#menu-accordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+#menu-accordeon li {
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #f00;
+   border:solid 1px #333A40
+}
+#menu-accordeon li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menu-accordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+#menu-accordeon ul li a, #menu-accordeon li:hover li a {
+  font-size:1em
+}
+#menu-accordeon li:hover {
+   background: #f00;
+}
+#menu-accordeon li li:hover {
+   background: #f00;
+}
+#menu-accordeon ul li:last-child {
+   border-radius: 0px 0px 6px 6px;
+   border:none;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
+}
+div.A{
+	display : flex;
+	margin : 0;
+	border : 0;
+}
+
+div.B{
+	float : left;
+	width: 20%;
+	height: 100%;
+	margin: 1em;
+}
+div.B.img{
+	float: top;
+}
+
+div.C{
+	
+	margin-left : 1em;
+	height : 3em;
+}
